@@ -1,0 +1,29 @@
+.footer {
+  background-color: var(--dark-bg-color);
+  height: 100%;
+}
+.footer__contacts {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
+}
+.footer__title {
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-social__list {
+  margin: 20px 0 0 0;
+}
+.footer-social__link {
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-social__icon {
+  fill: #ffffff;
+}
+.footer--column {
+  flex-basis: calc((50% - 45px) / 2);
+}
+.footer--column:not(:first-child) {
+  margin-left: 30px;
+}

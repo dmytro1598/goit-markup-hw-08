@@ -1,0 +1,22 @@
+.navigation-contacts__link {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}
+.navigation-contacts__link > .navigation-contacts__icon--smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-size: contain;
+  fill: var(--second-text-color);
+}
+.navigation-contacts__link > .navigation-contacts__icon--envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-size: contain;
+  fill: var(--second-text-color);
+}

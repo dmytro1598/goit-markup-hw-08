@@ -39,3 +39,8 @@
 .engage__boxes:not(:first-child) {
   margin-left: 30px;
 }
+@media screen and (max-width: 1199px) {
+  .engage {
+    display: none;
+  }
+}

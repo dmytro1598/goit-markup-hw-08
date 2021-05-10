@@ -8,8 +8,13 @@
   min-height: 581px;
   background-color: #ffffff;
   border-radius: 4px;
-  z-index: 5;
+  z-index: 8;
   transition: var(--animation) var(--timing-function);
+
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+    min-height: 609px;
+  }
 }
 .modal__button--close {
   display: flex;
@@ -77,6 +82,10 @@
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
+
+  @media screen and (max-width: 1199px) {
+    max-width: 370px;
+  }
 }
 
 .modal__chekbox {
@@ -87,6 +96,10 @@
 }
 .modal__form {
   position: relative;
+}
+.modal__button--div {
+  display: flex;
+  justify-content: center;
 }
 .modal__button--submit {
   font-weight: bold;
@@ -100,7 +113,6 @@
   color: #ffffff;
   width: 200px;
   height: 50px;
-  margin-left: 124px;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -118,14 +130,23 @@
   transform: translateY(-50%);
   transition: var(--animation) var(--timing-function);
 }
+.modal__policy {
+  display: flex;
+}
 .modal__policy--text {
   color: var(--second-text-color);
+  margin-left: 8px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
 }
-.modal__policy {
-  display: inline-block;
-}
-.link-policy-modal {
+.modal__policy--link {
   color: var(--accent-color);
+  margin-left: 2px;
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
 }
 .modal__policy--input {
   -webkit-appearance: none;

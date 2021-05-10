@@ -17,7 +17,7 @@
   bottom: 0;
   display: block;
   width: 100%;
-  height: 4px;
+  max-height: 4px;
   background-color: var(--accent-color);
   transform: scale(0, 0);
   transition: transform var(--animation) var(--timing-function);
@@ -29,6 +29,10 @@
 }
 .link.navigation__link--current {
   display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   padding-top: 28px;
   padding-bottom: 28px;
   color: var(--accent-color);
@@ -36,6 +40,7 @@
 .link.navigation__link--current::after {
   content: "";
   position: absolute;
+
   left: 0;
   bottom: 0;
   display: block;
@@ -51,10 +56,16 @@
   display: flex;
   margin-left: 93px;
 }
+
+@media screen and (max-width: 767px) {
+  .navigation__list {
+    display: none;
+  }
+}
 .item:not(:last-child) {
   margin-right: 50px;
 }
-.list > .navigation__list {
+.navigation__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -66,8 +77,4 @@
   padding-top: 28px;
   padding-bottom: 28px;
   transition: var(--animation) var(--timing-function);
-}
-.navigation-contacts__list {
-  display: flex;
-  margin-left: auto;
 }

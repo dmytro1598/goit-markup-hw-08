@@ -34,10 +34,9 @@
                         <a class="link navigation__link" href="">Контакты</a>
                     </li>
                 </ul>
-            
 
                 <ul class="list navigation-contacts__list">
-                    <li class="item">
+                    <li class="navigation-contacts__item">
                         <a class="link navigation-contacts__link navigation__link" href="info@devstudio.com">
                             <svg class="navigation-contacts__icon navigation-contacts__icon--envelope">
                                 <use href="./images/sprite.svg#icon-envelope"></use>
@@ -45,7 +44,7 @@
                             info@devstudio.com
                         </a>
                     </li>
-                    <li class="item">
+                    <li class="navigation-contacts__item">
                         <a class="link navigation-contacts__link navigation__link" href="tel:+380961111111">
                             <svg class="navigation-contacts__icon navigation-contacts__icon--smartphone">
                                 <use href="./images/sprite.svg#icon-smartphone"></use>
@@ -54,16 +53,64 @@
                         </a>
                     </li>
                 </ul>
+                <button class="mobile-menu__button" data-menu-button>
+                    <svg class="mobile-menu__icon">
+                        <use class="mobile-icon__menu" href="./images/sprite.svg#icon-menu" width=19px></use>
+                        <use class="mobile-icon__close" href="./images/sprite.svg#icon-close" width=24px></use>
+                    </svg>
+                </button>
             </nav>
         </div>
     </header>
+
+    <div class="mobile-menu" data-menu>
+        <ul class="list mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a class="link mobile-menu__link" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="link mobile-menu__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="link mobile-menu__link" href="">Контакты</a>
+            </li>
+        </ul>
+
+        <ul class="list mobile-menu-contacts__list">
+            <li class="mobile-menu__item">
+                <a class="link mobile-menu__link" href="info@devstudio.com">
+                    <p class="mobile-menu__mail">info@devstudio.com</p>
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="link mobile-menu-contacts__link " href="tel:+380961111111">
+                    <p class="mobile-menu__tel">+38 096 111 11 11</p>
+                </a>
+            </li>
+        </ul> 
+
+        <ul class="list mobile-menu-social__list">
+            <li class="mobile-menu-social__item">
+                <a class="link">Instagram</a>
+            </li>
+            <li class="mobile-menu-social__item">
+                <a class="link">Twitter</a>
+            </li>
+            <li class="mobile-menu-social__item">
+                <a class="link">Facebook</a>
+            </li>
+            <li class="mobile-menu-social__item">
+                <a class="link">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
 
     <main>
 
         <section class="main-title">
             <h1 class="main-title__text">Эффективные решения<br>для вашего бизнеса</h1>
             <button type="button" class="main-title__button" data-modal-open>Заказать услугу</button>
-        </section>
+        </section> 
 
         <section class="section">
             <div class="container">
@@ -106,7 +153,7 @@
             <div class="container">
                 <h2 class="title-section">Чем мы занимаемся</h2>
                 <ul class="list engage__list">
-                    <li class="advantage__boxes">
+                    <li class="engage__boxes">
                         <a class="link engage__link" href="" target="_blank" rel="noopener noreferrer">
                             <img class="engage__img" src="./images/dev.jpg" alt="Разработка" width="370">
                             <div class="engage__textarea">
@@ -114,7 +161,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="advantage__boxes">
+                    <li class="engage__boxes">
                         <a class="link engage__link" href="" target="_blank" rel="noopener noreferrer">
                             <img class="engage__img" src="./images/mobile_dev.jpg" alt="Разработка для мобильных устройств" width="370">
                             <div class="engage__textarea">
@@ -122,7 +169,7 @@
                             </div>
                         </a>
                     </li>                    
-                    <li class="advantage__boxes">
+                    <li class="engage__boxes">
                         <a class="link engage__link" href="" target="_blank" rel="noopener noreferrer">
                             <img class="engage__img" src="./images/design.jpg" alt="Дизайн" width="370">
                             <div class="engage__textarea">
@@ -132,7 +179,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> 
 
         <section class="section team">
             <div class="container">
@@ -140,7 +187,7 @@
 
                 <ul class="list team__list">
                     <li class="team__card">
-                        <img src="./images/photo1.jpg" alt="Игорь Демьяненко" width="270">
+                        <img class="team__img" src="./images/photo1.jpg" alt="Игорь Демьяненко">
                         <h3 class="team__name">Игорь Демьяненко</h3>
                         <p class="team__profession" lang="en">Product Designer</p>
                         <ul class="list social__list">
@@ -176,7 +223,7 @@
                     </li>
 
                     <li class="team__card">
-                        <img src="./images/photo2.jpg" alt="Ольга Репина" width="270">
+                        <img class="team__img" src="./images/photo2.jpg" alt="Ольга Репина">
                         <h3 class="team__name">Ольга Репина</h3>
                         <p class="team__profession" lang="en">Frontend Developer</p>
                         <ul class="list social__list">
@@ -212,7 +259,7 @@
                     </li>
 
                     <li class="team__card">
-                        <img src="./images/photo3.jpg" alt="Николай Тарасов" width="270">
+                        <img class="team__img" src="./images/photo3.jpg" alt="Николай Тарасов">
                         <h3 class="team__name">Николай Тарасов</h3>
                         <p class="team__profession" lang="en">Marketing</p>
                         <ul class="list social__list">
@@ -248,7 +295,7 @@
                     </li>
 
                     <li class="team__card">
-                        <img src="./images/photo4.jpg" alt="Михаил Ермаков" width="270">
+                        <img class="team__img" src="./images/photo4.jpg" alt="Михаил Ермаков">
                         <h3 class="team__name">Михаил Ермаков</h3>
                         <p class="team__profession" lang="en">UI Designer</p>
                         <ul class="list social__list">
@@ -384,7 +431,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer--column">
+        
+            <div class="footer__form">
                 <h3 class="footer__title">Подпишитесь на рассылку</h3>
                 <div class="signup">    
                     <form class="js-speaker-form signup__form" name="signup_form" autocomplete="on" novalidate>
@@ -399,7 +447,9 @@
                 </div>
             </div>
         </div>
+        
     </footer>
+ 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal__button--close" data-modal-close>
@@ -407,7 +457,9 @@
                     <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
             </button>
+            <div class="modal__button--div">
             <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
+            </div>
             <form class="js-speaker-form modal__form" name="modal_form" autocomplete="on" novalidate>
                 <ul class="list">
                     <li class="modal__form-field">
@@ -440,15 +492,18 @@
                     <label for="policy-modal-checkbox" class="modal__policy">
                         <input class="modal__policy--input" type="checkbox" name="policy-modal-checkbox" id="policy-modal-checkbox" />
                         <span class="modal__policy--icon"></span>
-                        <span class="policy-modal-text">Соглашаюсь с рассылкой и принимаю</span>
+                        <span class="modal__policy--text">Соглашаюсь с рассылкой и принимаю</span>
                         <a href="" class="modal__policy--link">Условия договора</a>
                     </label>
                 </div>
-                <button class="modal__button--submit" type="submit">Отправить</button>
+                <div class="modal__button--div">
+                    <button class="modal__button--submit" type="submit">Отправить</button>
+                </div>
             </form>
         </div>
     </div>
     <script src="./js/script.js"></script>
+    <script src="./js/menu.js"></script>
     <script>
         (() => {
                 document.querySelector('.js-speaker-form').addEventListener('submit', e => {

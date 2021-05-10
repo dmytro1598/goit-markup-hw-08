@@ -1,8 +1,34 @@
 .filter-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 50px;
+
+  @media screen and (max-width: 767px) {
+    justify-content: flex-start;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
-.filter-list > .filter__boxes:not(:first-child) {
+.filter__text {
+  padding: 6px 22px;
+}
+
+.filter-list > .filter__boxes {
   margin-left: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .filter-list > .filter__boxes:nth-child(3n + 1) {
+    margin-left: 0px;
+  }
+  .filter-list > .filter__boxes:nth-child(n + 4) {
+    margin-top: 15px;
+  }
 }

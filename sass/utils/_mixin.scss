@@ -1,0 +1,13 @@
+@mixin centeredFlex($type: flex) {
+  display: $type;
+  justify-content: center;
+  align-items: center;
+}
+@mixin generateIcons($iconList) {
+  @each $iconName in $iconList {
+    .advantages__#{$iconName}::before {
+      background-image: url(../images/advantages/#{$iconName}.svg);
+      // ИЗМЕНИТЬ ПОД СЕБЯ!!!
+    }
+  }
+}

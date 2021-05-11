@@ -355,23 +355,18 @@ textarea {
 .social__list {
   display: inline-flex;
   position: relative;
+  margin-top: 16px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .social__list {
-    margin: 16px 122px 24px 122px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .social__list {
-    margin: 16px 74px 24px 74px;
+    margin-bottom: 24px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .social__list {
-    margin: 16px 31.5px 30px 31.5px;
+    margin-bottom: 30px;
   }
 }
 
@@ -427,7 +422,21 @@ textarea {
 @media screen and (max-width: 1199px) {
   .signup {
     justify-content: center;
-    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+.signup__title {
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1199px) {
+  .signup__title {
+    text-align: center;
+    margin-bottom: 20px;
   }
 }
 
@@ -477,7 +486,7 @@ textarea {
 .signup__email {
   font-size: 16px;
   line-height: 1.25;
-  width: 358px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: inherit;
   color: rgba(255, 255, 255, 0.6);
@@ -488,9 +497,11 @@ textarea {
   outline: none;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .signup__email {
-    min-width: 450px;
+    margin-top: 20px;
+    max-width: 358px;
+    height: auto;
   }
 }
 
@@ -868,6 +879,19 @@ textarea {
   display: none;
 }
 
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.grid__item {
+  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 .navigation__link:hover,
 .navigation__link:focus,
 .navigation__link:active {
@@ -971,6 +995,7 @@ textarea {
   line-height: 1.4;
   text-transform: uppercase;
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .advantage__feature {
@@ -981,30 +1006,12 @@ textarea {
 
 .advantage__icon {
   display: block;
-  margin-bottom: 30px;
   background-color: var(--second-bg-color);
   height: 120px;
   background-repeat: no-repeat;
   background-position: center;
   padding: 25px 100px;
-}
-
-@media screen and (min-width: 480px) {
-  .advantage__icon {
-    max-width: 450px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .advantage__icon {
-    max-width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantage__icon {
-    max-width: 270px;
-  }
+  width: 100%;
 }
 
 .advantage__boxes {
@@ -1171,101 +1178,66 @@ textarea {
   margin-top: 10px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .team__img {
-    max-width: 450px;
+    max-width: 100%;
+    height: auto;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .team__img {
-    max-width: 354px;
+    max-width: 100%;
+    height: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team__img {
-    max-width: 270px;
+    max-width: 100%;
+    height: auto;
   }
 }
 
-.clients__list {
-  display: inline-flex;
-  flex-wrap: wrap;
+.clients__item {
+  --grid-item: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+    --grid-item: 3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    --grid-item: 6;
+  }
 }
 
 .clients__link {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 90px;
-  color: #afb1b8;
-  border: 1px solid;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: var(--animation) var(--timing-function);
+  transition: border var(--animation);
 }
 
-@media screen and (min-width: 480px) {
-  .clients__link {
-    width: 210px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .clients__link {
-    width: 226px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .clients__link {
-    width: 170px;
-  }
-}
-
-.clients__logo {
+.clients__icon {
   fill: #afb1b8;
-  transition: var(--animation) var(--timing-function);
+  transition: fill var(--animation);
 }
 
 .clients__link:hover,
 .clients__link:focus {
-  border-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
-.clients__link:hover .clients__logo,
-.clients__link:focus .clients__logo {
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
   fill: var(--accent-color);
-}
-
-@media screen and (min-width: 480px) {
-  .clients__item:nth-child(-n + 4) {
-    margin-bottom: 30px;
-  }
-  .clients__item:nth-child(even) {
-    margin-left: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .clients__item {
-    margin-bottom: 30px;
-  }
-  .clients__item:nth-child(n + 3) {
-    margin-bottom: 0px;
-  }
-  .clients__item {
-    margin-left: 30px;
-  }
-  .clients__item:nth-child(3n + 1) {
-    margin-left: 0px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .clients__item:not(:first-child) {
-    margin-left: 30px;
-  }
 }
 
 .navigation-contacts__link {
@@ -1343,10 +1315,6 @@ textarea {
   .footer__title {
     text-align: center;
   }
-}
-
-.footer__title:last-child {
-  padding-top: 20px;
 }
 
 .footer-social__list {

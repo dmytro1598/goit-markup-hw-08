@@ -1,6 +1,7 @@
 @import "./vendors/modern-normalize";
 
 @import "./utils/variables";
+@import "./utils/mixin";
 
 @import "./base/fonts";
 @import "./base/common";
@@ -19,6 +20,7 @@
 @import "./components/modal";
 @import "./components/filter-button";
 @import "./components/mobile-menu";
+@import "./components/grids";
 
 @import "./layouts/navigation";
 @import "./layouts/advantage";

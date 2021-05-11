@@ -130,9 +130,6 @@
   transform: translateY(-50%);
   transition: var(--animation) var(--timing-function);
 }
-.modal__policy {
-  display: flex;
-}
 .modal__policy--text {
   color: var(--second-text-color);
   margin-left: 8px;

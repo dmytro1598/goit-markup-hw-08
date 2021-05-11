@@ -691,10 +691,6 @@ textarea {
   transition: var(--animation) var(--timing-function);
 }
 
-.modal__policy {
-  display: flex;
-}
-
 .modal__policy--text {
   color: var(--second-text-color);
   margin-left: 8px;
@@ -1122,6 +1118,7 @@ textarea {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   flex-basis: 100%;
   align-items: center;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {

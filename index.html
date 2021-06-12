@@ -156,8 +156,8 @@
                     <li class="engage__boxes">
                         <a class="link engage__link" href="" target="_blank" rel="noopener noreferrer">
                             <picture class="engage__img">
-                                <source srcset='./images/engage/desktop/dekstop-app.png 1x, ./images/engage/desktop/dekstop-app@2x.png 2x'>
-                                <source srcset='./images/engage/desktop/dekstop-app.webp 1x, ./images/engage/desktop/dekstop-app_2x.webp 2x'>
+                                <source srcset="./images/engage/desktop/dekstop-app.webp 1x, ./images/engage/desktop/dekstop-app_2x.webp 2x">
+                                <source srcset="./images/engage/desktop/dekstop-app.png 1x, ./images/engage/desktop/dekstop-app@2x.png 2x">
                                 <img src="./images/engage/desktop/dekstop-app.png" alt="Разработка" width="370">
                             </picture>
                             <div class="engage__textarea">
@@ -168,8 +168,8 @@
                     <li class="engage__boxes">
                         <a class="link engage__link" href="" target="_blank" rel="noopener noreferrer">
                             <picture class="engage__img">
-                                <source srcset='./images/engage/desktop/mobile-app.png 1x, ./images/engage/desktop/mobile-app@2x.png 2x'>
-                                <source srcset='./images/engage/desktop/mobile-app.webp 1x, ./images/engage/desktop/mobile-app_2x.webp 2x'>
+                                <source srcset="./images/engage/desktop/mobile-app.webp 1x, ./images/engage/desktop/mobile-app_2x.webp 2x">
+                                <source srcset="./images/engage/desktop/mobile-app.png 1x, ./images/engage/desktop/mobile-app@2x.png 2x">
                                 <img src="./images/engage/desktop/mobile-app.png" alt="Разработка для мобильных устройств" width="370">
                             </picture> 
                             <div class="engage__textarea">
@@ -180,8 +180,8 @@
                     <li class="engage__boxes">
                         <a class="link engage__link" href="" target="_blank" rel="noopener noreferrer">
                             <picture class="engage__img">
-                                <source srcset='./images/engage/desktop/design.png 1x, ./images/engage/desktop/design@2x.png 2x'>
-                                <source srcset='./images/engage/desktop/design.webp 1x, ./images/engage/desktop/design_2x.webp 2x'>
+                                <source srcset="./images/engage/desktop/design.webp 1x, ./images/engage/desktop/design_2x.webp 2x">
+                                <source srcset="./images/engage/desktop/design.png 1x, ./images/engage/desktop/design@2x.png 2x">
                                 <img src="./images/engage/desktop/design.png" alt="Дизайн" width="370">
                             </picture> 
                             <div class="engage__textarea">
@@ -200,16 +200,27 @@
                 <ul class="list team__list">
                     <li class="team__card">
                         <picture class="team__img">
-                            <source srcset='./images/team/desktop/team1-desktop.jpg 1x, ./images/team/desktop/team1-desktop@2x.jpg 2x' media="(min-width=1200px)">
-                            <source srcset='./images/team/desktop/team1-desktop.webp 1x, ./images/team/desktop/team1-desktop@2x.webp 2x' media="(min-width=1200px)">
+                            <source srcset="./images/team/desktop/team1-desktop.webp 1x, ./images/team/desktop/team1-desktop@2x.webp 2x"
+                            media="(min-width=1200px)"
+                            type="image/webp">
+                            <source srcset="./images/team/tablet/team1-tablet.webp 1x, ./images/team/tablet/team1-tablet@2x.webp 2x"
+                            media="(min-width=768px)"
+                            type="image/webp">
+                            <source srcset="./images/team/mobile/team1-mobile.webp 1x, ./images/team/mobile/team1-mobile@2x.webp 2x"
+                            media="(max-width=767px)"
+                            type="image/webp">
 
-                            <source srcset='./images/team/tablet/team1-tablet.jpg 1x, ./images/team/tablet/team1-tablet@2x.jpg 2x' media="(min-width=768px)">
-                            <source srcset='./images/team/tablet/team1-tablet.webp 1x, ./images/team/tablet/team1-tablet@2x.webp 2x' media="(min-width=768px)">
+                            <source srcset="./images/team/desktop/team1-desktop.jpg 1x, ./images/team/desktop/team1-desktop@2x.jpg 2x"
+                            media="(min-width=1200px)"
+                            type="image/jpeg">
+                            <source srcset="./images/team/tablet/team1-tablet.jpg 1x, ./images/team/tablet/team1-tablet@2x.jpg 2x"
+                            media="(min-width=768px)"
+                            type="image/jpeg">
+                            <source srcset="./images/team/mobile/team1-mobile.jpg 1x, ./images/team/mobile/team1-mobile@2x.jpg 2x"
+                            media="(max-width=767px)"
+                            type="image/jpeg">
 
-                            <source srcset='./images/team/mobile/team1-mobile.jpg 1x, ./images/team/mobile/team1-mobile@2x.jpg 2x' media="(max-width=767px)">
-                            <source srcset='./images/team/mobile/team1-mobile.webp 1x, ./images/team/mobile/team1-mobile@2x.webp 2x' media="(max-width=767px)">
-
-                            <img src="./images/team/desktop/team1-desktop.jpg" alt="Игорь Демьяненко">
+                            <img src="./images/team/desktop/team1-desktop.jpg" width="450px" alt="Игорь Демьяненко">
                         </picture>
                         <h3 class="team__name">Игорь Демьяненко</h3>
                         <p class="team__profession" lang="en">Product Designer</p>
@@ -247,16 +258,27 @@
 
                     <li class="team__card">
                         <picture class="team__img">
-                            <source srcset='./images/team/desktop/team2-desktop.jpg 1x, ./images/team/desktop/team2-desktop@2x.jpg 2x' media="(min-width=1200px)">
-                            <source srcset='./images/team/desktop/team2-desktop.webp 1x, ./images/team/desktop/team2-desktop@2x.webp 2x' media="(min-width=1200px)">
+                            <source srcset="./images/team/desktop/team2-desktop.webp 1x, ./images/team/desktop/team2-desktop@2x.webp 2x"
+                            media="(min-width=1200px)"
+                            type="image/webp">
+                            <source srcset="./images/team/tablet/team2-tablet.webp 1x, ./images/team/tablet/team2-tablet@2x.webp 2x"
+                            media="(min-width=768px)"
+                            type="image/webp">
+                            <source srcset="./images/team/mobile/team2-mobile.webp 1x, ./images/team/mobile/team2-mobile@2x.webp 2x"
+                            media="(max-width=767px)"
+                            type="image/webp">
+
+                            <source srcset="./images/team/desktop/team2-desktop.jpg 1x, ./images/team/desktop/team2-desktop@2x.jpg 2x"
+                            media="(min-width=1200px)"
+                            type="image/jpeg">
+                            <source srcset="./images/team/tablet/team2-tablet.jpg 1x, ./images/team/tablet/team2-tablet@2x.jpg 2x"
+                            media="(min-width=768px)"
+                            type="image/jpeg">
+                            <source srcset="./images/team/mobile/team2-mobile.jpg 1x, ./images/team/mobile/team2-mobile@2x.jpg 2x"
+                            media="(max-width=767px)"
+                            type="image/jpeg">
                             
-                            <source srcset='./images/team/tablet/team2-tablet.jpg 1x, ./images/team/tablet/team2-tablet@2x.jpg 2x' media="(min-width=768px)">
-                            <source srcset='./images/team/tablet/team2-tablet.webp 1x, ./images/team/tablet/team2-tablet@2x.webp 2x' media="(min-width=768px)">
-
-                            <source srcset='./images/team/mobile/team2-mobile.jpg 1x, ./images/team/mobile/team2-mobile@2x.jpg 2x' media="(max-width=767px)">
-                            <source srcset='./images/team/mobile/team2-mobile.webp 1x, ./images/team/mobile/team2-mobile@2x.webp 2x' media="(max-width=767px)">
-
-                            <img src="./images/team/desktop/team2-desktop.jpg" alt="Ольга Репина">
+                            <img src="./images/team/desktop/team2-desktop.jpg" width="450px" alt="Ольга Репина">
                         </picture>
                         <h3 class="team__name">Ольга Репина</h3>
                         <p class="team__profession" lang="en">Frontend Developer</p>
@@ -294,15 +316,26 @@
 
                     <li class="team__card">
                         <picture class="team__img">
-                            <source srcset='./images/team/desktop/team3-desktop.jpg 1x, ./images/team/desktop/team3-desktop@2x.jpg 2x' media="(min-width=1200px)">
-                            <source srcset='./images/team/desktop/team3-desktop.webp 1x, ./images/team/desktop/team3-desktop@2x.webp 2x' media="(min-width=1200px)">
+                            <source srcset="./images/team/desktop/team3-desktop.webp 1x, ./images/team/desktop/team3-desktop@2x.webp 2x"
+                            media="(min-width=1200px)"
+                            type="image/webp">
+                            <source srcset="./images/team/tablet/team3-tablet.webp 1x, ./images/team/tablet/team3-tablet@2x.webp 2x"
+                            media="(min-width=768px)"
+                            type="image/webp">
+                            <source srcset="./images/team/mobile/team3-mobile.webp 1x, ./images/team/mobile/team3-mobile@2x.webp 2x"
+                            media="(max-width=767px)"
+                            type="image/webp">
+
+                            <source srcset="./images/team/desktop/team3-desktop.jpg 1x, ./images/team/desktop/team3-desktop@2x.jpg 2x"
+                            media="(min-width=1200px)"
+                            type="image/jpeg">
+                            <source srcset="./images/team/tablet/team3-tablet.jpg 1x, ./images/team/tablet/team3-tablet@2x.jpg 2x"
+                            media="(min-width=768px)"
+                            type="image/jpeg">
+                            <source srcset="./images/team/mobile/team3-mobile.jpg 1x, ./images/team/mobile/team3-mobile@2x.jpg 2x"
+                            media="(max-width=767px)"
+                            type="image/jpeg">
                             
-                            <source srcset='./images/team/tablet/team3-tablet.jpg 1x, ./images/team/tablet/team3-tablet@2x.jpg 2x' media="(min-width=768px)">
-                            <source srcset='./images/team/tablet/team3-tablet.webp 1x, ./images/team/tablet/team3-tablet@2x.webp 2x' media="(min-width=768px)">
-
-                            <source srcset='./images/team/mobile/team3-mobile.jpg 1x, ./images/team/mobile/team3-mobile@2x.jpg 2x' media="(max-width=767px)">
-                            <source srcset='./images/team/mobile/team3-mobile.webp 1x, ./images/team/mobile/team3-mobile@2x.webp 2x' media="(max-width=767px)">
-
                             <img src="./images/team/desktop/team3-desktop.jpg" alt="Николай Тарасов">
                         </picture>
                         <h3 class="team__name">Николай Тарасов</h3>
@@ -341,14 +374,25 @@
 
                     <li class="team__card">
                         <picture class="team__img">
-                            <source srcset='./images/team/desktop/team4-desktop.jpg 1x, ./images/team/desktop/team4-desktop@2x.jpg 2x' media="(min-width=1200px)">
-                            <source srcset='./images/team/desktop/team4-desktop.webp 1x, ./images/team/desktop/team4-desktop@2x.webp 2x' media="(min-width=1200px)">
-                            
-                            <source srcset='./images/team/tablet/team4-tablet.jpg 1x, ./images/team/tablet/team4-tablet@2x.jpg 2x' media="(min-width=768px)">
-                            <source srcset='./images/team/tablet/team4-tablet.webp 1x, ./images/team/tablet/team4-tablet@2x.webp 2x' media="(min-width=768px)">
+                            <source srcset="./images/team/desktop/team4-desktop.webp 1x, ./images/team/desktop/team4-desktop@2x.webp 2x"
+                            media="(min-width=1200px)"
+                            type="image/webp">
+                            <source srcset="./images/team/tablet/team4-tablet.webp 1x, ./images/team/tablet/team4-tablet@2x.webp 2x"
+                            media="(min-width=768px)"
+                            type="image/webp">
+                            <source srcset="./images/team/mobile/team4-mobile.webp 1x, ./images/team/mobile/team4-mobile@2x.webp 2x"
+                            media="(max-width=767px)"
+                            type="image/webp">
 
-                            <source srcset='./images/team/mobile/team4-mobile.jpg 1x, ./images/team/mobile/team4-mobile@2x.jpg 2x' media="(max-width=767px)">
-                            <source srcset='./images/team/mobile/team4-mobile.webp 1x, ./images/team/mobile/team4-mobile@2x.webp 2x' media="(max-width=767px)">
+                            <source srcset="./images/team/desktop/team4-desktop.jpg 1x, ./images/team/desktop/team4-desktop@2x.jpg 2x"
+                            media="(min-width=1200px)"
+                            type="image/jpeg">
+                            <source srcset="./images/team/tablet/team4-tablet.jpg 1x, ./images/team/tablet/team4-tablet@2x.jpg 2x"
+                            media="(min-width=768px)"
+                            type="image/jpeg">
+                            <source srcset="./images/team/mobile/team4-mobile.jpg 1x, ./images/team/mobile/team4-mobile@2x.jpg 2x"
+                            media="(max-width=767px)"
+                            type="image/jpeg">
 
                             <img src="./images/team/desktop/team4-desktop.jpg" alt="Михаил Ермаков">
                         </picture>
@@ -562,7 +606,7 @@
     <script src="./js/menu.js"></script>
     <script>
         (() => {
-                document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+                document.querySelector(".js-speaker-form").addEventListener("submit", e => {
                     e.preventDefault();
                     new FormData(e.currentTarget).forEach((value, name) =>
                         console.log(`${name}: ${value}`),

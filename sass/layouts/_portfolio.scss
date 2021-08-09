@@ -7,6 +7,7 @@
 }
 .portfolio__item {
   line-height: 0px;
+  
 }
 .portfolio--border {
   border-bottom: 1px solid #eeeeee;
@@ -42,6 +43,7 @@
   display: inline-block;
   position: relative;
   overflow: hidden;
+  
 }
 .portfolio__overlay {
   display: inline-block;
@@ -68,11 +70,13 @@
   margin: 63px 24px;
 }
 .portfolio__img {
-  @media screen and (min-width: 320px) {
+  display: block;
+  height: auto;
+  @media screen and (max-width: 767.9px) {
     max-width: 450px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
     max-width: 354px;
   }
 

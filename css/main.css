@@ -312,7 +312,7 @@ textarea {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: var(--hero-gradient), url("/images/main-title/mobile/people-bg-mobile.png");
+  background-image: var(--hero-gradient), url("../images/main-title/mobile/people-bg-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -320,20 +320,20 @@ textarea {
 
 @media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (min-resolution: 192dpi), screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
   .main-title {
-    background-image: var(--hero-gradient), url("/images/main-title/mobile/people-bg-mobile@2x.png");
+    background-image: var(--hero-gradient), url("../images/main-title/mobile/people-bg-mobile@2x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .main-title {
     max-width: 1200px;
-    background-image: var(--hero-gradient), url("/images/main-title/tablet/people-bg-tablet.png");
+    background-image: var(--hero-gradient), url("../images/main-title/tablet/people-bg-tablet.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 2dppx) {
   .main-title {
-    background-image: var(--hero-gradient), url("/images/main-title/tablet/people-bg-tablet@2x.png");
+    background-image: var(--hero-gradient), url("../images/main-title/tablet/people-bg-tablet@2x.jpg");
   }
 }
 
@@ -342,13 +342,13 @@ textarea {
     max-width: 1600px;
     padding-top: 200px;
     height: 600px;
-    background-image: var(--hero-gradient), url("/images/main-title/desktop/people-bg-desktop.png");
+    background-image: var(--hero-gradient), url("../images/main-title/desktop/people-bg-desktop.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .main-title {
-    background-image: var(--hero-gradient), url("/images/main-title/desktop/people-bg-desktop@2x.png");
+    background-image: var(--hero-gradient), url("../images/main-title/desktop/people-bg-desktop@2x.jpg");
   }
 }
 

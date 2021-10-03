@@ -1311,6 +1311,11 @@ textarea {
   margin-top: 9px;
 }
 
+.footer__contacts:hover,
+.footer__contacts:focus {
+  color: var(--accent-color);
+}
+
 .footer__title {
   font-weight: bold;
   line-height: 16px;

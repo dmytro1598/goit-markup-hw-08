@@ -39,6 +39,7 @@
 }
 .link.navigation__link--current::after {
   content: "";
+  color: var(--accent-color);
   position: absolute;
 
   left: 0;

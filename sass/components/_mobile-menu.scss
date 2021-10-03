@@ -56,6 +56,9 @@
 .mobile-menu__link:active {
   color: var(--accent-color);
 }
+.mobile-menu__current {
+  color: var(--accent-color);
+}
 .mobile-menu-contacts__list {
   display: flex;
   flex-direction: column-reverse;

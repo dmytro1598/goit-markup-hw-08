@@ -1542,6 +1542,12 @@ textarea {
   height: 100%;
 }
 
+@media screen and (max-width: 230px) {
+  .portfolio__text {
+    font-size: 17px;
+  }
+}
+
 .portfolio__img {
   display: block;
   height: auto;

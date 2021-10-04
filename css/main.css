@@ -779,6 +779,7 @@ textarea {
   border: 0px;
   border-radius: 4px;
   transition: var(--animation) var(--animation);
+  padding: 6px 22px;
 }
 
 .filter__button:hover,
@@ -1425,10 +1426,6 @@ textarea {
   .filter-list {
     justify-content: center;
   }
-}
-
-.filter__text {
-  padding: 6px 22px;
 }
 
 .filter__boxes:not(:last-child) {
